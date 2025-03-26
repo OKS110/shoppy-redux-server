@@ -28,7 +28,7 @@ export const payment = async(req, res) => {
                 headers: {
                     Authorization: `KakaoAK ${KAKAO_ADMIN_KEY}`,
                     "Content-Type": "application/x-www-form-urlencoded",
-            },
+                },
             }
         );
         console.log("response.data", response.data);
