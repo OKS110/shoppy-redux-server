@@ -1,5 +1,5 @@
 import axios from 'axios';
-import * as repository from '../repository/orderRepository.js';
+// import * as repository from '../repository/orderRepository.js';
 
 
 export const payment = async(req, res) => {
@@ -20,9 +20,9 @@ export const payment = async(req, res) => {
                 quantity: 1,
                 total_amount,
                 tax_free_amount: 0,
-                approval_url: "http://localhost:3000/payment/success",
-                cancel_url: "http://localhost:3000/payment/cancel",
-                fail_url: "http://localhost:3000/payment/fail",
+                approval_url: "http://shoppy-redux-client.s3-website.ap-northeast-2.amazonaws.com/payment/success",
+                cancel_url: "http://shoppy-redux-client.s3-website.ap-northeast-2.amazonaws.com/payment/cancel",
+                fail_url: "http://shoppy-redux-client.s3-website.ap-northeast-2.amazonaws.com/payment/fail",
             },
             {
                 headers: {
